@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/destionActualPreview"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="Destino Actual"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/tiempoActualPreview"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="TIEMPO"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:typeface="normal"
+        android:visibility="invisible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="496dp"
+        android:textColorHint="#805E5E">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/location_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:hint="Escribir Destino "
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStartGeoLogging"
+        android:text="Empezar Temporizador" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCancelLoggingButton"
+        android:text="Cancelar Temporizador"
+        android:visibility="invisible" />
+
+</LinearLayout>
